@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हनुमान चालीसा</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: linear-gradient(135deg, #ff9933, #ff6600, #cc3300);
+            min-height: 100vh;
+            color: #000000;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px 15px;
+            background: rgba(10, 6, 6, 0.95);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(45deg, #ff6600, #cc3300);
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .notification-controls {
+            background: #a57135;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 2px solid #ff9933;
+            text-align: center;
+        }
+
+        .notification-btn {
+            background: linear-gradient(45deg, #ff6600, #cc3300);
+            color: rgb(10, 8, 8);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .notification-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .notification-btn:disabled {
+            background: #040404;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .status {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .status.enabled {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .status.disabled {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .chalisa-content {
+            background: rgb(16, 14, 14);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .verse {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #0a0908;
+            border-radius: 10px;
+            border-left: 5px solid #ff6600;
+            transition: all 0.3s ease;
+            font-size: 2em;
+            font-weight: bold;
+            color: #cc3300;
+            text-align: center;
+        }
+
+        .verse:hover {
+            transform: translateX(5px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .doha {
+            background: linear-gradient(45deg, #ff9933, #ffcc99);
+            color: #2c1810;
+            border: none;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 15px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            font-size: 1.9em;
+        }
+
+        .aarti {
+            background: linear-gradient(45deg, #cc3300, #ff6600);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            font-size: 1.3em;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .verse {
+                font-size: 1.9em;
+                padding: 15px;
+            }
+            
+            .chalisa-content {
+                padding: 20px;
+            }
+
+            .doha {
+                font-size: 1.2em;
+            }
+
+            .aarti {
+                font-size: 1.1em;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🙏 हनुमान चालीसा 🙏</h1>
+            <p>श्री हनुमान जी की कृपा से</p>
+        </div>
+
+        
+
+        <div class="chalisa-content">
+            <div class="verse doha">
+                श्रीगुरु चरन सरोज रज, निज मनु मुकुरु सुधारि।<br>
+                बरनऊं रघुवर बिमल जसु, जो दायकु फल चारि।।
+            </div>
+
+            <div class="verse doha">
+                बुद्धिहीन तनु जानिके, सुमिरौं पवन-कुमार।<br>
+                बल बुद्धि विद्या देहु मोहिं, हरहु कलेस विकार।।
+            </div>
+
+            <div class="verse">
+                जय हनुमान ग्यान गुन सागर।<br>
+                जय कपीस तिहुं लोक उजागर।।१।।
+            </div>
+
+            <div class="verse">
+                राम दूत अतुलित बल धामा।<br>
+                अंजनि-पुत्र पवनसुत नामा।।२।।
+            </div>
+
+            <div class="verse">
+                महाबीर विक्रम बजरंगी।<br>
+                कुमति निवार सुमति के संगी।।३।।
+            </div>
+
+            <div class="verse">
+                कंचन वरन विराज सुबेसा।<br>
+                कानन कुण्डल कुंचित केसा।।४।।
+            </div>
+
+            <div class="verse">
+                हाथ बज्र औ ध्वजा विराजै।<br>
+                कांधे मूंज जनेऊ साजै।।५।।
+            </div>
+
+            <div class="verse">
+                शंकर सुवन केसरीनंदन।<br>
+                तेज प्रताप महा जग वंदन।।६।।
+            </div>
+
+            <div class="verse">
+                विद्यावान गुनी अति चातुर।<br>
+                राम काज करिबे को आतुर।।७।।
+            </div>
+
+            <div class="verse">
+                प्रभु चरित्र सुनिबे को रसिया।<br>
+                राम लखन सीता मन बसिया।।८।।
+            </div>
+
+            <div class="verse">
+                सूक्ष्म रूप धरि सियहिं दिखावा।<br>
+                विकट रूप धरि लंक जरावा।।९।।
+            </div>
+
+            <div class="verse">
+                भीम रूप धरि असुर संहारे।<br>
+                रामचंद्र के काज संवारे।।१०।।
+            </div>
+
+            <div class="verse">
+                लाय सञ्जीवन लखन जियाये।<br>
+                श्रीरघुवीर हरषि उर लाये।।११।।
+            </div>
+
+            <div class="verse">
+                रघुपति कीन्ही बहुत बड़ाई।<br>
+                तुम मम प्रिय भरतहि सम भाई।।१२।।
+            </div>
+
+            <div class="verse">
+                सहस बदन तुम्हरो जस गावैं।<br>
+                अस कहि श्रीपति कण्ठ लगावैं।।१३।।
+            </div>
+
+            <div class="verse">
+                सनकादिक ब्रह्मादि मुनीसा।<br>
+                नारद सारद सहित अहीसा।।१४।।
+            </div>
+
+            <div class="verse">
+                जम कुबेर दिक्पाल जहां ते।<br>
+                कवि कोविद कहि सके कहां ते।।१५।।
+            </div>
+
+            <div class="verse">
+                तुम उपकार सुग्रीवहिं कीन्हा।<br>
+                राम मिलाय राज पद दीन्हा।।१६।।
+            </div>
+
+            <div class="verse">
+                तुम्हरो मंत्र विभीषन माना।<br>
+                लंकेस्वर भए सब जग जाना।।१७।।
+            </div>
+
+            <div class="verse">
+                जुग सहस्र जोजन पर भानू।<br>
+                लील्यो ताहि मधुर फल जानू।।१८।।
+            </div>
+
+            <div class="verse">
+                प्रभु मुद्रिका मेलि मुख माहीं।<br>
+                जलधि लांघि गए अचरज नाहीं।।१९।।
+            </div>
+
+            <div class="verse">
+                दुर्गम काज जगत के जेते।<br>
+                सुगम अनुग्रह तुम्हरे तेते।।२०।।
+            </div>
+
+            <div class="verse">
+                राम दुआरे तुम रखवारे।<br>
+                होत न आज्ञा बिनु पैसारे।।२१।।
+            </div>
+
+            <div class="verse">
+                सब सुख लहै तुम्हारी सरना।<br>
+                तुम रक्षक काहू को डरना।।२२।।
+            </div>
+
+            <div class="verse">
+                आपन तेज सम्हारो आपै।<br>
+                तीनों लोक हांक तें कांपै।।२३।।
+            </div>
+
+            <div class="verse">
+                भूत पिसाच निकट नहिं आवै।<br>
+                महाबीर जब नाम सुनावै।।२४।।
+            </div>
+
+            <div class="verse">
+                नासै रोग हरे सब पीरा।<br>
+                जपत निरंतर हनुमत बीरा।।२५।।
+            </div>
+
+            <div class="verse">
+                संकट तें हनुमान छुड़ावै।<br>
+                मन क्रम बचन ध्यान जो लावै।।२६।।
+            </div>
+
+            <div class="verse">
+                सब पर राम तपस्वी राजा।<br>
+                तिन के काज सकल तुम साजा।।२७।।
+            </div>
+
+            <div class="verse">
+                और मनोरथ जो कोई लावै।<br>
+                सोई अमित जीवन फल पावै।।२८।।
+            </div>
+
+            <div class="verse">
+                चारों जुग परताप तुम्हारा।<br>
+                है परसिद्ध जगत उजियारा।।२९।।
+            </div>
+
+            <div class="verse">
+                साधु-संत के तुम रखवारे।<br>
+                असुर निकंदन राम दुलारे।।३०।।
+            </div>
+
+            <div class="verse">
+                अष्टसिद्धि नौ निधि के दाता।<br>
+                अस वर दीन जानकी माता।।३१।।
+            </div>
+
+            <div class="verse">
+                राम रसायन तुम्हरे पासा।<br>
+                सदा रहो रघुपति के दासा।।३२।।
+            </div>
+
+            <div class="verse">
+                तुम्हरे भजन राम को पावै।<br>
+                जनम-जनम के दुख बिसरावै।।३३।।
+            </div>
+
+            <div class="verse">
+                अन्तकाल रघुवर पुर जाई।<br>
+                जहां जन्म हरि-भक्त कहाई।।३४।।
+            </div>
+
+            <div class="verse">
+                और देवता चित्त न धरई।<br>
+                हनुमत सेइ सर्व सुख करई।।३५।।
+            </div>
+
+            <div class="verse">
+                संकट कटै मिटै सब पीरा।<br>
+                जो सुमिरै हनुमत बलवीरा।।३६।।
+            </div>
+
+            <div class="verse">
+                जै जै जै हनुमान गोसाईं।<br>
+                कृपा करहु गुरुदेव की नाईं।।३७।।
+            </div>
+
+            <div class="verse">
+                जो सत बार पाठ कर कोई।<br>
+                छूटहि बंदि महा सुख होई।।३८।।
+            </div>
+
+            <div class="verse">
+                जो यह पढ़ै हनुमान चालीसा।<br>
+                होय सिद्धि साखी गौरीसा।।३९।।
+            </div>
+
+            <div class="verse">
+                तुलसीदास सदा हरि चेरा।<br>
+                कीजै नाथ हृदय महं डेरा।।४०।।
+            </div>
+
+            <div class="verse doha">
+                पवनतनय संकट हरन, मंगल मूरति रूप।<br>
+                राम लखन सीता सहित, हृदय बसहु सुर भूप।।
+            </div>
+
+            <div class="aarti">
+                <h3>🕉️ आरती 🕉️</h3>
+                <div style="margin-top: 15px;">
+                    आरती कीजै हनुमान लला की।<br>
+                    दुष्ट दलन रघुनाथ कला की।।<br><br>
+                    जै हनुमान ग्यान गुन सागर।<br>
+                    जै कपीस तिहुं लोक उजागर।।<br><br>
+                    जय हनुमान जी की! 🙏
+                </div>
+            </div>
+        </div>
+        <div class="notification-controls">
+            <h3>दैनिक स्मरण</h3>
+            <p>रोज शाम 8 बजे अधिसूचना पाएं</p>
+            <button id="enableNotifications" class="notification-btn">
+                रोज शाम 8 बजे याद दिलाएं
+            </button>
+            <div id="notificationStatus" class="status disabled">
+                अधिसूचना बंद है
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🕉️ हर हर महादेव | जय श्री राम 🕉️</p>
+        </div>
+    </div>
+
+    <script>
+        // Register the service worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+        
+        let dailyNotificationInterval;
+        
+        const enableBtn = document.getElementById('enableNotifications');
+        const statusDiv = document.getElementById('notificationStatus');
+        
+        // Check if notifications are supported
+        if (!('Notification' in window)) {
+            statusDiv.textContent = 'अधिसूचना समर्थित नहीं है';
+            statusDiv.className = 'status disabled';
+            enableBtn.disabled = true;
+        } else {
+            checkNotificationStatus();
+        }
+        
+        enableBtn.addEventListener('click', async () => {
+            if (Notification.permission === 'granted') {
+                if (dailyNotificationInterval) {
+                    // Disable notifications
+                    clearInterval(dailyNotificationInterval);
+                    dailyNotificationInterval = null;
+                    updateStatus('disabled', 'दैनिक अधिसूचना बंद कर दी गई');
+                    enableBtn.textContent = 'रोज शाम 8 बजे याद दिलाएं';
+                } else {
+                    // Enable notifications
+                    setupDailyNotifications();
+                    // Send a notification via Service Worker as a test
+                    if (navigator.serviceWorker.controller) {
+                        navigator.serviceWorker.controller.postMessage({type: 'show-notification'});
+                    }
+                }
+            } else if (Notification.permission === 'default') {
+                // Request permission
+                const permission = await Notification.requestPermission();
+                if (permission === 'granted') {
+                    setupDailyNotifications();
+                    updateStatus('enabled', 'अनुमति मिल गई! रोज शाम 8 बजे याद दिलाया जाएगा।');
+                } else {
+                    updateStatus('disabled', 'अधिसूचना की अनुमति नहीं मिली');
+                }
+            } else {
+                updateStatus('disabled', 'अधिसूचना बंद है। कृपया ब्राउज़र सेटिंग्स में जाकर चालू करें।');
+            }
+        });
+        
+        function checkNotificationStatus() {
+            if (Notification.permission === 'granted') {
+                // Check if notifications were previously enabled
+                if (localStorage.getItem('hanumanNotificationsEnabled') === 'true') {
+                    setupDailyNotifications();
+                } else {
+                    updateStatus('disabled', 'अधिसूचना की अनुमति है - चालू करने के लिए बटन दबाएं');
+                }
+            } else if (Notification.permission === 'denied') {
+                updateStatus('disabled', 'अधिसूचना बंद है। कृपया ब्राउज़र सेटिंग्स में जाकर चालू करें।');
+            } else {
+                updateStatus('disabled', 'अधिसूचना की अनुमति के लिए बटन दबाएं');
+            }
+        }
+        
+        function setupDailyNotifications() {
+            // Save the preference
+            localStorage.setItem('hanumanNotificationsEnabled', 'true');
+            
+            // Clear any existing interval
+            if (dailyNotificationInterval) {
+                clearInterval(dailyNotificationInterval);
+            }
+            
+            // Check every minute if it's 8 PM
+            dailyNotificationInterval = setInterval(() => {
+                const now = new Date();
+                const hour = now.getHours();
+                const minute = now.getMinutes();
+                
+                // If it's 8 PM (20:00)
+                if (hour === 20 && minute === 0) {
+                    showNotification();
+                }
+            }, 60000); // Check every minute
+            
+            updateStatus('enabled', 'रोज शाम 8 बजे हनुमान चालीसा की याद दिलाई जाएगी');
+            enableBtn.textContent = 'दैनिक अधिसूचना बंद करें';
+            
+            // Show immediate test notification
+            setTimeout(() => {
+                new Notification('🙏 हनुमान चालीसा 🙏', {
+                    body: 'दैनिक अधिसूचना चालू हो गई है। अब आपको रोज शाम 8 बजे याद दिलाया जाएगा।',
+                    icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🙏</text></svg>',
+                    tag: 'hanuman-chalisa-setup'
+                });
+            }, 1000);
+        }
+        
+        function showNotification() {
+            if (Notification.permission === 'granted') {
+                new Notification('🙏 हनुमान चालीसा का समय 🙏', {
+                    body: 'शाम के 8 बज गए हैं। हनुमान चालीसा पढ़ने का समय है।\nजय हनुमान जी की! 🚩',
+                    icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🙏</text></svg>',
+                    tag: 'hanuman-chalisa-daily',
+                    requireInteraction: true
+                });
+            }
+        }
+        
+        function updateStatus(type, message) {
+            statusDiv.className = `status ${type}`;
+            statusDiv.textContent = message;
+        }
+        
+        // Show immediate notification if it's exactly 8 PM when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            const now = new Date();
+            if (now.getHours() === 20 && now.getMinutes() === 0 && Notification.permission === 'granted') {
+                showNotification();
+            }
+        });
+    </script>
+</body>
+</html>
